@@ -9,7 +9,7 @@
 <service_bundle type='manifest' name='inetconv:tftp'>
 
 <service
-        name='tftp'
+        name='pkgsrc/tftp-hpa'
         type='service'
         version='1'>
 
@@ -84,7 +84,7 @@
         <template>
                 <common_name>
                         <loctext xml:lang='C'>
-tftp
+pkgsrc/tftp-hpa
                         </loctext>
                 </common_name>
         </template>

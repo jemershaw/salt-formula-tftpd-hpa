@@ -18,7 +18,7 @@ Solaris:
   pkgs:
     name: tftp-hpa
   root: /var/lib/tftpboot/
-  service: tftp
+  service: pkgsrc/tftpd-hpa
 {%- endload %}
 
 {%- set server = salt['grains.filter_by'](raw_server, merge=salt['pillar.get']('tftpd_hpa:server')) %}
