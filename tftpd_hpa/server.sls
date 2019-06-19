@@ -8,7 +8,7 @@ tftpd_hpa_package:
 tftpd_hpa_install:
   file.managed:
     - name: /opt/tftpd_hpa.xml
-    - source: tftpd_hpa/files/smartos.xml
+    - source: salt://tftpd_hpa/files/smartos.xml
     - mode: 644
     - user: root
     - group: root
