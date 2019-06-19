@@ -2,8 +2,7 @@
 {%- load_yaml as raw_server %}
 Debian:
   pkgs:
-  - tftpd-hpa
-  - syslinux
+    name: tftpd-hpa
   {%- if salt['grains.get']('os') == 'Ubuntu' %}
   path: /var/lib/tftpboot
   {%- else %}
@@ -12,8 +11,7 @@ Debian:
   service: tftpd-hpa
 RedHat:
   pkgs:
-  - tftp-server
-  - syslinux
+    name: tftpd-hpa
   root: /var/lib/tftpboot/
   service: tftpd-hpa
 {%- endload %}
